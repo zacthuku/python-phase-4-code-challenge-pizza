@@ -42,7 +42,12 @@ You can run your Flask API on [`localhost:5555`](http://localhost:5555) by
 running:
 
 ```console
-python server/app.py
+
+export FLASK_APP=server.app
+Then run:
+flask run --port 5555
+or
+python -m server.app
 ```
 
 You can run your React app on [`localhost:4000`](http://localhost:4000) by
