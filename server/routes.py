@@ -1,4 +1,4 @@
-from models import db, Restaurant, RestaurantPizza, Pizza
+from .models import db, Restaurant, RestaurantPizza, Pizza
 from flask import Blueprint, jsonify, request
 
 routes_bp = Blueprint("routes_bp", __name__)

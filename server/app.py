@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from models import db, Restaurant, RestaurantPizza, Pizza
+from .models import db, Restaurant, RestaurantPizza, Pizza
 from flask_migrate import Migrate
 from flask import Flask, request, jsonify
 #from flask_restful import Api, Resource
@@ -21,7 +21,7 @@ db.init_app(app)
 
 #api = Api(app)
 # Registering the routes blueprint
-from routes import routes_bp
+from .routes import routes_bp
 app.register_blueprint(routes_bp)
 
 
